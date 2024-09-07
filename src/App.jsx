@@ -37,7 +37,7 @@ function App() {
   return (
     <div className='bg-[#541F8B] w-screen h-[100vh] flex flex-col justify-center items-center py-6 '>
       <h1 className='text-3xl text-white font-bold mt-4'>Weather App</h1> 
-      <div className='w-[400px] flex bg-white mt-4 pt-2 items-center h-10 rounded-lg shadow-md'>
+      <div className='sm:w-[400px] w-[290px] flex bg-white mt-4 pt-2 items-center h-10 rounded-lg shadow-md'>
         <input 
           type="text" 
           placeholder="Search City..." 
@@ -60,7 +60,7 @@ function App() {
      
       {weatherData && <Card weatherData={weatherData} />}
 
-      <div className='w-[500px] flex justify-evenly py-1 mt-4'>
+      <div className='sm:w-[500px] w-[290px] flex justify-evenly py-1 mt-4'>
         <WiDaySunny size={64} className='text-yellow-400'/>
         <WiCloud size={64} className='text-white'/>
         <WiRain size={64} className='text-blue-600'/>
